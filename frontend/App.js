@@ -6,13 +6,14 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <Routes/>
+      <Routes/>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    padding: 3,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
