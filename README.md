@@ -5,7 +5,7 @@
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/manassesss/MAZE?color=%2304D361">
 
-<a href="https://github.com/ES2-UFPI/e-motion/commits/master">
+<a href="https://github.com/manassesss/MAZE/commits/main">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/manassesss/MAZE">
  </a>
 
