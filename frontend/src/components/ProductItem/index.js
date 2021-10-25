@@ -1,17 +1,21 @@
 import * as React from 'react';
 import { List } from 'react-native-paper';
 import styles from './styles';
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
-const ProductItem = () => (
-  <List.Accordion title= "Produto" style={styles.item} titleStyle={styles.text}>
+const ProductItem = ({ Nome, Quantidade, Preco, ...props }) => (
+  <List.Accordion
+    title={Nome}
+    style={styles.item}
+    theme={{ colors: { primary: "#000"} }} //seta a cor quando for apertado
+    titleStyle={styles.text}>
     <List.Item style={stylesItem.item}
-    title="Quantidade"
-    description="10"
+      title="Quantidade"
+      description={Quantidade}
     />
     <List.Item style={stylesItem.item}
-    title="Valor"
-    description="R$ 10,00"
+      title="Valor"
+      description={Preco}
     />
   </List.Accordion>
 );
@@ -20,7 +24,7 @@ export default ProductItem;
 
 
 const stylesItem = StyleSheet.create({
-  item:{
+  item: {
     marginBottom: 6,
     backgroundColor: "#FFFFFF"
   }
