@@ -16,6 +16,7 @@ export default function Routes(){
                     }
                 }}
             >
+                <AppStack.Screen name ="Home" component={Menu}/>
                 <AppStack.Screen name ="Product" component={Product_List}/>
             </AppStack.Navigator>
         </NavigationContainer>
