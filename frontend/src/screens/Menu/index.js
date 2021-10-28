@@ -2,10 +2,10 @@ import * as React from 'react';
 import { BottomNavigation } from 'react-native-paper';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Product_List from '../Product_List';
-
+import ProductRegister from '../Product_Register';
 
 const HomeRoute = () =><Product_List/>;
-const SearchRoute = () => <Product_List/>;
+const SearchRoute = () => <ProductRegister/>;
 const FavoriteRoute = () =><Product_List/>;
 
 const AgendIcon = (props)=> <MaterialCommunityIcons {...props} name='calendar' color="#000"/>
