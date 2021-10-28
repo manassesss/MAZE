@@ -3,8 +3,10 @@ import styles from './styles.js';
 import { View, Image, SafeAreaView , ScrollView  } from 'react-native';
 import { Button, Headline, TextInput } from 'react-native-paper';
 import Header from '../../components/Header/index.js';
+import CardEdit from '../../components/CardEdit/index.js';
 
-const ProductRegister = () => {
+
+const ProductEdit = () => {
     const [expanded, setExpanded] = React.useState(true);
     const handlePress = () => setExpanded(!expanded);
     const [name, setName] = React.useState('');
@@ -15,12 +17,9 @@ const ProductRegister = () => {
         <SafeAreaView style={styles.container}>
             <Header/>
             <ScrollView>
-            <Headline style={styles.textHead}>Cadastrar Produto no Estoque</Headline>
-            <View style={{ flex: 1, alignItems: "center", justifyContent: "center", marginBottom:30}}>
-                <Image
-                    source={require('../../assets/Grocer1.png')}
-                    style={{ width: 200, height: 200 }}
-                />
+            <Headline style={styles.textHead}>Editar Produto no Estoque</Headline>
+            <View style={{ flex: 1, justifyContent: "center", marginBottom:30}}>
+                <CardEdit Nome="Trigo" Quantidade= "10" Preco="R$10,00"/>
             </View>
                 <TextInput style={styles.input}
                     theme={{ colors: { primary: "#EECCAA" } }}
@@ -47,11 +46,12 @@ const ProductRegister = () => {
                     mode='contained'
                     style={styles.button}
                 >
-                    Cadastrar
+                    Salvar
                 </Button>
             </ScrollView>
         </SafeAreaView>
     );
 };
 
-export default ProductRegister;
+export default ProductEdit;
+;
