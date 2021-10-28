@@ -39,7 +39,25 @@ The project design was developed using the Figma tool. The design can be accesse
 
 ## :man_cook: Developers
 
-"It's just me, mylsef and I."
+<table> 
+      <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/43761534?v=4" width="100px;" alt="Foto do Manassés"/><br>
+        <sub>
+          <b>Manassés Silva</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/42661697?v=4" width="100px;" alt="Foto do Samuel"/><br>
+        <sub>
+          <b>Samuel Santos</b>
+        </sub>
+      </a>
+    </td>
+    </tr>
+</table>
 
 
 [expo]: https://expo.io/
