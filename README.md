@@ -41,7 +41,7 @@ The project design was developed using the Figma tool. The design can be accesse
 
 <table> 
       <td align="center">
-      <a href="#">
+      <a href="https://github.com/manassesss">
         <img src="https://avatars.githubusercontent.com/u/43761534?v=4" width="100px;" alt="Foto do Manassés"/><br>
         <sub>
           <b>Manassés Silva</b>
@@ -49,7 +49,7 @@ The project design was developed using the Figma tool. The design can be accesse
       </a>
     </td>
     <td align="center">
-      <a href="#">
+      <a href="https://github.com/SamuelSSan28">
         <img src="https://avatars.githubusercontent.com/u/42661697?v=4" width="100px;" alt="Foto do Samuel"/><br>
         <sub>
           <b>Samuel Santos</b>
