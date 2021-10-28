@@ -1,7 +1,8 @@
 import * as React from 'react';
 import styles from './styles.js';
-import { View, Image, FlatList } from 'react-native';
+import { View, Image, SafeAreaView , ScrollView  } from 'react-native';
 import { Button, Headline, TextInput } from 'react-native-paper';
+import Header from '../../components/Header/index.js';
 
 const ProductRegister = () => {
     const [expanded, setExpanded] = React.useState(true);
@@ -10,15 +11,16 @@ const ProductRegister = () => {
     const [amount, setAmount] = React.useState(0);
     const [price, setPrice] = React.useState(0);
     return (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
+            <Header/>
+            <ScrollView>
             <Headline style={styles.textHead}>Cadastrar Produto no Estoque</Headline>
-            <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+            <View style={{ flex: 1, alignItems: "center", justifyContent: "center", marginBottom:30}}>
                 <Image
                     source={require('../../assets/Grocer1.png')}
                     style={{ width: 200, height: 200 }}
                 />
             </View>
-            <View>
                 <TextInput style={styles.input}
                     theme={{ colors: { primary: "#EECCAA" } }}
                     mode='flat'
@@ -46,8 +48,8 @@ const ProductRegister = () => {
                 >
                     Cadastrar
                 </Button>
-            </View>
-        </View>
+            </ScrollView>
+        </SafeAreaView>
     );
 };
 
