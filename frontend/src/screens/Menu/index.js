@@ -4,10 +4,11 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import Product_List from '../Product_List';
 import ProductRegister from '../Product_Register';
 import ProductEdit from '../Product_Edit';
+import OrderList from '../Order_List';
 
 
 const HomeRoute = () =><Product_List/>;
-const SearchRoute = () => <ProductRegister/>;
+const SearchRoute = () => <OrderList/>;
 const FavoriteRoute = () =><ProductEdit/>;
 
 const AgendIcon = (props)=> <MaterialCommunityIcons {...props} name='calendar' color="#000"/>
