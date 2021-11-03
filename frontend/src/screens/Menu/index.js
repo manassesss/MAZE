@@ -5,10 +5,10 @@ import Product_List from '../Product_List';
 import ProductRegister from '../Product_Register';
 import ProductEdit from '../Product_Edit';
 import OrderList from '../Order_List';
-
+import OrderRegister from '../Order_Register';
 
 const HomeRoute = () =><Product_List/>;
-const SearchRoute = () => <OrderList/>;
+const SearchRoute = () => <OrderRegister/>;
 const FavoriteRoute = () =><ProductEdit/>;
 
 const AgendIcon = (props)=> <MaterialCommunityIcons {...props} name='calendar' color="#000"/>
