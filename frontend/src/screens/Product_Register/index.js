@@ -8,8 +8,8 @@ const ProductRegister = () => {
     const [expanded, setExpanded] = React.useState(true);
     const handlePress = () => setExpanded(!expanded);
     const [name, setName] = React.useState('');
-    const [amount, setAmount] = React.useState(0);
-    const [price, setPrice] = React.useState(0);
+    const [amount, setAmount] = React.useState('');
+    const [price, setPrice] = React.useState('');
 
     return (
         <SafeAreaView style={styles.container}>

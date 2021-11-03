@@ -4,7 +4,7 @@ import { Card, Title, Paragraph } from 'react-native-paper';
 const CardEdit = ({ Nome, Quantidade, Preco, ...props }) => (
   <Card>
     <Card.Content>
-      <Title>{Nome}</Title>
+      <Title style={{textAlign:"center"}}>{Nome}</Title>
       <Paragraph>Quantidade: {Quantidade}</Paragraph>
       <Paragraph>Preço: {Preco}</Paragraph>
     </Card.Content>
