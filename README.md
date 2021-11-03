@@ -1,6 +1,6 @@
 # MAZÉ 
 <h1 align="center">
-    <img alt="logo" title="logo" src="https://github.com/manassesss/try-repo/blob/main/logo5.svg" width="200"/>
+    <img alt="logo" title="logo" src="https://github.com/manassesss/try-repo/blob/main/logo2.svg" width="200"/>
 </h1>
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/manassesss/MAZE?color=%2304D361">
