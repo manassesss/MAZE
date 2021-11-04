@@ -76,7 +76,8 @@ const OrderRegister = () => {
                     theme={{ colors: { primary: "#EECCAA" } }}
                     mode='flat'
                     label="Anotações"
-                    numberOfLines={10}
+                    multiline
+                    numberOfLines={6}
                     value={note}
                     onChangeText={text => setNote(text)}
                 />
