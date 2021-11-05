@@ -6,14 +6,17 @@ import ProductRegister from '../Product_Register';
 import ProductEdit from '../Product_Edit';
 import OrderList from '../Order_List';
 import OrderRegister from '../Order_Register';
+import About from '../About';
 
 const HomeRoute = () =><Product_List/>;
 const SearchRoute = () => <OrderRegister/>;
 const FavoriteRoute = () =><ProductEdit/>;
+const AboutRoute = () =><About/>;
 
 const AgendIcon = (props)=> <MaterialCommunityIcons {...props} name='calendar' color="#000"/>
 const PedidosIcon = (props)=> <MaterialCommunityIcons {...props} name='clipboard-check-outline' color="#000"/>
 const IngredientesIcon = (props)=> <MaterialCommunityIcons {...props} name='cake-variant' color="#000"/>
+const AboutIcon = (props)=> <MaterialCommunityIcons {...props} name='information' color="#000"/>
 
 export default class Base extends React.Component {
   //link de icons https://materialdesignicons.com/
@@ -21,8 +24,9 @@ export default class Base extends React.Component {
     index: 0,
     routes: [
       { key: 'home', title: 'Agenda', icon: AgendIcon },
-      { key: 'search', title: 'Pedidos', icon: PedidosIcon },
+      { key: 'search', title: 'Estoque', icon: PedidosIcon },
       { key: 'favorite', title: 'Ingredientes', icon: IngredientesIcon },
+      { key: 'about', title: 'Sobre', icon: AboutIcon },
     ]
   };
 
@@ -33,6 +37,7 @@ export default class Base extends React.Component {
     home: HomeRoute,
     search: SearchRoute,
     favorite: FavoriteRoute,
+    about: AboutRoute,
   });
 
   render() {
