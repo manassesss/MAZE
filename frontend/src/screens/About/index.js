@@ -7,7 +7,7 @@ import Header from '../../components/Header/index.js';
 const About = () => {
     const [expanded, setExpanded] = React.useState(true);
     const handlePress = () => setExpanded(!expanded);
-  
+
     return (
         <SafeAreaView style={styles.container}>
             <Header />
@@ -20,24 +20,33 @@ const About = () => {
 
                     />
                 </View>
-                <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ornare tortor at ante mollis tincidunt.
-                    Vivamus sit amet rhoncus est. Ut in ornare ex. Sed condimentum justo ut lacus rhoncus, ullamcorper luctus erat rhoncus.
-                    Aliquam feugiat nulla a finibus luctus. Pellentesque blandit condimentum mi, vel fringilla metus porttitor et.
-                    Ut eu nulla sit amet lacus venenatis egestas. Maecenas sed ante eu ante faucibus condimentum quis a orci. Duis vitae est nisl.
-                    Nulla facilisi. Praesent non feugiat est, et egestas turpis.</Text>
+                <Text style={{textAlign: "center"}}>Este é um aplicativo pessoal para minha mãe administrar seu trabalho. 
+                    Ela trabalha com bufê de festas e precisa administrar pedidos e estoques de produtos usados na 
+                    confecção de bolos e outras coisas. Aliado a isso, preciso praticar minhas habilidades com Javascript e React-Native. 
+                    Por esse motivo, decidi fazer este aplicativo para ajudar a mim e a ela..</Text>
                 <View style={{ flex: 1, alignItems: "center", justifyContent: "center", marginBottom: 30 }}>
                     <Image
                         source={require('../../assets/Baker.png')}
                         style={{ width: 300, height: 300 }}
 
                     />
-                    <Headline style={styles.textOptions}>Legendas</Headline>
-                    <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ornare tortor at ante mollis tincidunt.
-                    Vivamus sit amet rhoncus est. Ut in ornare ex. Sed condimentum justo ut lacus rhoncus, ullamcorper luctus erat rhoncus.
-                    Aliquam feugiat nulla a finibus luctus.</Text>
+                    
+                    <Headline style={styles.textOptions}>Funcionalidades</Headline>
+                    <Text style={{textAlign: "center"}}>No app, é possivel administrar o estoque de produtos utilizados para a produção de bolos
+                    e salgados. Nesse controle de estoque, é possivel ter noção dos gastos com os produtos estocados. Além disso, é possivel agendar as 
+                    encomendas. Nesse agendamento, você pode ter controle da data acertada para entrega, quantidade de salgados encomendadas, dados sobre o 
+                    bolo e qual o tipo de evento.</Text>
+                    <Headline style={styles.textOptions}>Sobre os tipos de Eventos</Headline>
+                    <Text style={{textAlign: "center"}}>Para ter uma ideia mais intuitiva dos eventos cadastrados, e para melhor facilidade de recordação
+                    do mesmo, é utilizado um esquema de coloração da seguinte maneira:</Text>
+                    <Image
+                        source={require('../../assets/captions.png')}
+                        style={{ width: 300, height: 220 }}
+
+                    />
                 </View>
             </ScrollView>
-        </SafeAreaView>
+        </SafeAreaView >
     );
 };
 

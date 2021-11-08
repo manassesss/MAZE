@@ -17,6 +17,7 @@ export default StyleSheet.create({
         marginBottom: 20,
       },
       textOptions: {
+        textAlign:"left",
         fontSize: 15,
         fontWeight:"bold",
 
