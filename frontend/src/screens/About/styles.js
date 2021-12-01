@@ -20,6 +20,8 @@ export default StyleSheet.create({
         textAlign:"left",
         fontSize: 15,
         fontWeight:"bold",
+        paddingTop: 15,
+        paddingBottom: 15
 
       },
       input: {

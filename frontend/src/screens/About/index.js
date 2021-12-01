@@ -38,12 +38,15 @@ const About = () => {
                     bolo e qual o tipo de evento.</Text>
                     <Headline style={styles.textOptions}>Sobre os tipos de Eventos</Headline>
                     <Text style={{textAlign: "center"}}>Para ter uma ideia mais intuitiva dos eventos cadastrados, e para melhor facilidade de recordação
-                    do mesmo, é utilizado um esquema de coloração da seguinte maneira:</Text>
+                    dos mesmos, é utilizado um esquema de coloração da seguinte maneira:</Text>
                     <Image
                         source={require('../../assets/captions.png')}
-                        style={{ width: 300, height: 220 }}
+                        style={{ width: 250, height: 190 }}
 
                     />
+                    <Headline style={styles.textOptions}>Modelos de bolos</Headline>
+                    <Text style={{textAlign: "center"}}>Para facilitar as negociações e ajudar na demonstração dos produtos, é utilizado na aba
+                    produtos um modelo de tamanho e preço dos bolos produzidos.</Text>
                 </View>
             </ScrollView>
         </SafeAreaView >
