@@ -23,7 +23,6 @@ export default StyleSheet.create({
       input: {
         backgroundColor:"#FCFCFF",
         borderColor:"#EECCAA",
-        borderRadius:20,
         marginBottom: 30,
       },
       inputNote: {

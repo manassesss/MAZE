@@ -6,6 +6,6 @@ export default StyleSheet.create({
     justifyContent: "center",
     padding: 17,
     marginTop: 30,
-
+    backgroundColor: "#fff"
   },
 });
