@@ -11,8 +11,8 @@ export const orderList = [
     },
     {
         id: 2,
-        nome_Cliente: 'Adelia Prado',
-        data: '14 de outubro',
+        nome_Cliente: 'Conceição Evaristo',
+        data: '16 de outubro',
         quantidade_Salgados: 10,
         bolo: true,
         preco: "R$ 10,00",
@@ -21,8 +21,8 @@ export const orderList = [
     },
     {
         id: 3,
-        nome_Cliente: 'Adelia Prado',
-        data: '14 de outubro',
+        nome_Cliente: 'Fernando Pessoa',
+        data: '16 de outubro',
         quantidade_Salgados: 10,
         bolo: true,
         preco: "R$ 10,00",
@@ -32,7 +32,7 @@ export const orderList = [
     {
         id: 4,
         nome_Cliente: 'Adelia Prado',
-        data: '14 de outubro',
+        data: '20 de outubro',
         quantidade_Salgados: 10,
         bolo: true,
         preco: "R$ 10,00",
@@ -41,8 +41,8 @@ export const orderList = [
     },
     {
         id: 5,
-        nome_Cliente: 'Adelia Prado',
-        data: '14 de outubro',
+        nome_Cliente: 'Manuel Bandeira',
+        data: '21 de outubro',
         quantidade_Salgados: 10,
         bolo: true,
         preco: "R$ 10,00",
@@ -51,8 +51,8 @@ export const orderList = [
     },
     {
         id: 6,
-        nome_Cliente: 'Adelia Prado',
-        data: '14 de outubro',
+        nome_Cliente: 'Gonçalves Dias',
+        data: '21 de outubro',
         quantidade_Salgados: 10,
         bolo: true,
         preco: "R$ 10,00",
@@ -61,8 +61,8 @@ export const orderList = [
     },
     {
         id: 7,
-        nome_Cliente: 'Adelia Prado',
-        data: '14 de outubro',
+        nome_Cliente: 'Machado de Assis',
+        data: '21 de outubro',
         quantidade_Salgados: 10,
         bolo: true,
         preco: "R$ 10,00",

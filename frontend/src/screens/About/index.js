@@ -2,7 +2,6 @@ import * as React from 'react';
 import styles from './styles.js';
 import { View, Image, SafeAreaView, ScrollView } from 'react-native';
 import { Headline, TextInput, Checkbox, Text } from 'react-native-paper';
-import Header from '../../components/Header/index.js';
 
 const About = () => {
     const [expanded, setExpanded] = React.useState(true);
@@ -10,7 +9,6 @@ const About = () => {
 
     return (
         <SafeAreaView style={styles.container}>
-            <Header />
             <ScrollView>
                 <Headline style={styles.textHead}>Sobre</Headline>
                 <View style={{ flex: 1, alignItems: "center", justifyContent: "center", marginBottom: 30 }}>

@@ -6,9 +6,10 @@ export default StyleSheet.create({
         fontWeight:"bold",
       },
       item: {
-        borderColor: "#FCE8D4",
-        borderWidth: 2,
-        borderRadius: 15,
+        backgroundColor: "#fcfcfc",
+        borderRadius: 10,
+        borderLeftColor: "#EE9999",
+        borderLeftWidth: 12
       },
       textItem : {
         color: "#91919F",
