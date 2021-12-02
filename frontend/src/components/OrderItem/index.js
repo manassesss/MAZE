@@ -1,12 +1,22 @@
 import * as React from 'react';
 import { List } from 'react-native-paper';
 import styles from './styles';
+import { useState } from 'react';
 
-const OrderItem = ({Nome_Cliente, Data, ...props}) => (
-  <List.Section>
-    <List.Subheader style={styles.textHeader}>{Data}</List.Subheader>
-    <List.Item title={Nome_Cliente} style={styles.item} titleStyle={styles.textItem}/>
-  </List.Section>
-);
+export default function OrderItem({ Nome_Cliente, tipo, ...props }) {
+  const colors = {
+      Casamento: "#EE9999",
+      Festa: "#533DEB",
+      Aniversario: "#E6EA2D",
+      Outro: "#D9D0DE",
+    }
 
-export default OrderItem;
+  return (
+    <List.Item 
+    title={Nome_Cliente} 
+    style={{backgroundColor: "#fcfcfc", borderRadius: 10, borderLeftWidth: 12, borderLeftColor: colors[tipo]}} 
+    titleStyle={styles.textItem} 
+    />
+  );
+
+}

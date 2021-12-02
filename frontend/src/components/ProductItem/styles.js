@@ -6,16 +6,18 @@ export default StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         padding: 50,
+        backgroundColor: "#fff",
       },
       item: {
         marginBottom: 6,
         padding: 5,
-        color:"#292B2D",
+        color:"#525257",
         borderRadius: 10,
-        backgroundColor: "#FFFFFF",
+        backgroundColor: "#fcfcfc",
       },
       text: {
-        fontWeight:"bold"
+        fontWeight:"bold",
+        color:"#525257",
       }
 
 });

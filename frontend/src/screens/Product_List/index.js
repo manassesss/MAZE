@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styles from './styles.js';
 import { View, FlatList } from 'react-native';
-import {IconButton } from 'react-native-paper';
+import { IconButton } from 'react-native-paper';
 import { useNavigation } from '@react-navigation/native';
 import { productList } from '../../services/products'
 import ProductItem from '../../components/ProductItem'

@@ -26,6 +26,6 @@ export default ProductItem;
 const stylesItem = StyleSheet.create({
   item: {
     marginBottom: 6,
-    backgroundColor: "#FFFFFF"
+    backgroundColor: "#fcfcfc"
   }
 });

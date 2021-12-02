@@ -5,9 +5,10 @@ export default StyleSheet.create({
     container: {
         justifyContent: "center",
         flex: 1,
+        backgroundColor:"#fff",
         paddingRight: 17,
         paddingLeft: 17,
-        marginTop: 10,
+        marginTop: 40,
         
       },
       textHead: {

@@ -8,6 +8,7 @@ export default StyleSheet.create({
         paddingRight: 17,
         paddingLeft: 17,
         marginTop: 10,
+        backgroundColor:"#fff",
         
       },
       textHead: {
