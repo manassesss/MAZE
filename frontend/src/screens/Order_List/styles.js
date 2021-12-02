@@ -6,6 +6,13 @@ export default StyleSheet.create({
     justifyContent: "center",
     padding: 17,
     marginTop: 30,
-    backgroundColor: "#fff"
+    backgroundColor: "#fff",
+    marginBottom: 45,
   },
+  header: {
+    color: "#525257", 
+    marginBottom:10,
+    fontSize: 30,
+    fontWeight: "bold",
+  }
 });

@@ -41,4 +41,34 @@ export const productList = [
         Quantidade: 2,
         Preco: "R$ 10,00",
     },
+    {
+        id: 8,
+        Nome: 'Anilina',
+        Quantidade: 2,
+        Preco: "R$ 10,00",
+    },
+    {
+        id: 9,
+        Nome: 'Confete',
+        Quantidade: 2,
+        Preco: "R$ 10,00",
+    },
+    {
+        id: 10,
+        Nome: 'Framboesa',
+        Quantidade: 2,
+        Preco: "R$ 10,00",
+    },
+    {
+        id: 11,
+        Nome: 'Embalagem de Salgado',
+        Quantidade: 2,
+        Preco: "R$ 10,00",
+    },
+    {
+        id: 12,
+        Nome: 'Jujuba',
+        Quantidade: 2,
+        Preco: "R$ 10,00",
+    },
 ];
