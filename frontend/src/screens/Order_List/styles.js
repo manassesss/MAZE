@@ -3,16 +3,18 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
 
   container: {
-    justifyContent: "center",
-    padding: 17,
-    marginTop: 30,
+    flex: 1,
+    flexDirection: "column",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "5%",
+    marginTop: "8%",
     backgroundColor: "#fff",
-    marginBottom: 45,
   },
   header: {
     color: "#525257", 
     marginBottom:10,
-    fontSize: 30,
+    fontSize: 20,
     fontWeight: "bold",
   }
 });

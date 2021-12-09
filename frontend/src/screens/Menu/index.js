@@ -10,7 +10,6 @@ import About from '../About';
 
 const HomeRoute = () =><OrderList/>;
 const SearchRoute = () => <Product_List/>;
-
 const AboutRoute = () =><About/>;
 
 const AgendIcon = (props)=> <MaterialCommunityIcons {...props} name='calendar' color="#000"/>
@@ -43,6 +42,7 @@ export default class Base extends React.Component {
           navigationState={this.state}
           onIndexChange={this._handleIndexChange}
           renderScene={this._renderScene}
+          activeColor='#EE9999'
           shifting={true}
           barStyle={{ backgroundColor: '#fff' }}
         />

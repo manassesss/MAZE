@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styles from './styles.js';
-import { View, FlatList } from 'react-native';
+import { View, FlatList, Image} from 'react-native';
 import { IconButton } from 'react-native-paper';
 import { useNavigation } from '@react-navigation/native';
 import { productList } from '../../services/products'
@@ -18,6 +18,12 @@ const ProductList = () => {
   return (
     <View style={styles.container}>
       <SearchBox />
+      <View >
+          <Image
+            source={require('../../assets/Cooking.png')}
+            style={{ width: 200, height: 200 }}
+          />
+        </View>
       <View style={{ alignItems: "center" }}>
         <IconButton
           icon="plus-circle-outline"
@@ -27,6 +33,7 @@ const ProductList = () => {
         />
       </View>
       <FlatList
+      style={{width: "100%"}}
         showsVerticalScrollIndicator={false}
         data={productList}
         renderItem={({ item, index }) =>

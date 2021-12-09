@@ -8,9 +8,10 @@ import {
   SectionList,
   SafeAreaView,
   StatusBar,
+  Image,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { IconButton } from 'react-native-paper';
+import { IconButton, Headline } from 'react-native-paper';
 import OrderItem from '../../components/OrderItem';
 import SearchBox from '../../components/SearchBox';
 import styles from './styles.js';
@@ -36,7 +37,7 @@ const DATA = [
 ];
 
 const Item = ({ title, tipo }) => (
-  <OrderItem Nome_Cliente={title} tipo={tipo}/>
+  <OrderItem Nome_Cliente={title} tipo={tipo} />
 );
 
 export default function App() {
@@ -60,7 +61,7 @@ export default function App() {
 
     data.forEach(d => {
       keys.forEach((k, i) => {
-        if(d.data == k){
+        if (d.data == k) {
           values[i].push(d);
         }
       })
@@ -72,15 +73,25 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <SearchBox />
-      <View style={{ alignItems: "center" }}>
-        <IconButton
-          icon="plus-circle-outline"
-          color={"#59A834"}
-          size={30}
-          onPress={navigateToRegistration}
-        />
+      <Headline style={styles.header}>Encomendas</Headline>
+      <View>
+        <View >
+          <Image
+            source={require('../../assets/Calendar.png')}
+            style={{ width: 200, height: 200 }}
+          />
+        </View>
+        <View style={{alignItems: "center"}}>
+          <IconButton
+            icon="plus-circle-outline"
+            color={"#59A834"}
+            size={30}
+            onPress={navigateToRegistration}
+          />
+        </View>
       </View>
       <SectionList
+      style={{width: "100%"}}
         sections={normalizedData}
         //keyExtractor={(item, index) => item + index}
         renderItem={({ item }) => <Item title={item.nome_Cliente} tipo={item.evento} />}

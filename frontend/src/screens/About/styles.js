@@ -3,20 +3,18 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
 
     container: {
-        justifyContent: "center",
-        flex: 1,
-        backgroundColor:"#fff",
-        paddingRight: 17,
-        paddingLeft: 17,
-        marginTop: 40,
-        
+      flex: 1,
+      flexDirection: "column",
+      justifyContent: "space-between",
+      alignItems: "center",
+      padding: "5%",
+      marginTop: "8%",
+      backgroundColor: "#fff",
       },
       textHead: {
         textAlign:"center",
         fontWeight:"bold",
         fontSize: 20,
-        marginBottom: 20,
-        marginTop:30
       },
       textOptions: {
         textAlign:"left",
