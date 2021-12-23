@@ -1,13 +1,18 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions} from 'react-native';
+
+const { width, height } = Dimensions.get('window');
 
 export default StyleSheet.create({
 
   container: {
+    height: "100%",
     flex: 1,
     flexDirection: "column",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "5%",
+    paddingLeft: "5%",
+    paddingRight: "5%",
+    paddingTop: "5%",
     marginTop: "8%",
     backgroundColor: "#fff",
   },

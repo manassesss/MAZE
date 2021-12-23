@@ -11,7 +11,7 @@ import {
   Image,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { IconButton, Headline } from 'react-native-paper';
+import { Button, Headline } from 'react-native-paper';
 import OrderItem from '../../components/OrderItem';
 import SearchBox from '../../components/SearchBox';
 import styles from './styles.js';
@@ -81,17 +81,14 @@ export default function App() {
             style={{ width: 200, height: 200 }}
           />
         </View>
-        <View style={{alignItems: "center"}}>
-          <IconButton
-            icon="plus-circle-outline"
-            color={"#59A834"}
-            size={30}
-            onPress={navigateToRegistration}
-          />
+        <View style={{ flexDirection: "row", alignItems: "center" }}>
+          <Button icon="plus-circle-outline" mode="text" onPress={navigateToRegistration} color="#525257">
+            Nova encomenda
+          </Button>
         </View>
       </View>
       <SectionList
-      style={{width: "100%"}}
+        style={{ width: "100%" }}
         sections={normalizedData}
         //keyExtractor={(item, index) => item + index}
         renderItem={({ item }) => <Item title={item.nome_Cliente} tipo={item.evento} />}
